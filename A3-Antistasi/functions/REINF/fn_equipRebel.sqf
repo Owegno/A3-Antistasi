@@ -25,19 +25,44 @@ _unit setUnitLoadout [ [], [], [],    [uniform _unit, []], [], [],    "", "", []
 	["ItemMap","","","ItemCompass","ItemWatch",""] ];		// no GPS, radio, NVG
 if (haveRadio) then {_unit linkItem "ItemRadio"};
 
-// Removed for the moment because I'm not sure what the intentions are for rebel uniforms
-// forceadd required for greenfor vanilla because allRebelUniforms has the blufor guerilla uniforms
-//_unit forceAddUniform (if (!activeGREF) then { selectRandom allRebelUniforms } else { uniform _unit });
+// Get a random rebel uniform, these are set in the rebel faction template.
+_unit forceAddUniform (selectRandom allRebelUniforms);
 
 
 // Chance of picking armored rather than random vests and headgear, rising with unlocked gear counts
 if !(unlockedHeadgear isEqualTo []) then {
-	if (count unlockedArmoredHeadgear * 20 < random(100)) then { _unit addHeadgear (selectRandom unlockedHeadgear) }
-	else { _unit addHeadgear (selectRandom unlockedArmoredHeadgear) };
+	private _highest_armor = "";
+	private _highest_armor_val = 0;
+	{
+		if ((getNumber (configfile >> "CfgWeapons" >> _x >> "ItemInfo" >> "HitpointsProtectionInfo" >> "Head" >> "armor") > _highest_armor_val)) then
+		{
+			_highest_armor = _x;
+			_highest_armor_val = (getNumber (configfile >> "CfgWeapons" >> _x >> "ItemInfo" >> "HitpointsProtectionInfo" >> "Head" >> "armor"));
+		};
+	} forEach unlockedHeadgear;
+	if !(_highest_armor == "") then
+	{
+		_unit addHeadgear _highest_armor;
+	};
+	_highest_armor = nil;
+	_highest_armor_val = nil;
 };
 if !(unlockedVests isEqualTo []) then {
-	if (count unlockedArmoredVests * 20 < random(100)) then { _unit addVest (selectRandom unlockedVests) }
-	else { _unit addVest (selectRandom unlockedArmoredVests); };
+	private _highest_armor = "";
+	private _highest_armor_val = 0;
+	{
+		if ((getNumber (configfile >> "CfgWeapons" >> _x >> "ItemInfo" >> "HitpointsProtectionInfo" >> "Chest" >> "armor") > _highest_armor_val)) then
+		{
+			_highest_armor = _x;
+			_highest_armor_val = (getNumber (configfile >> "CfgWeapons" >> _x >> "ItemInfo" >> "HitpointsProtectionInfo" >> "Chest" >> "armor"));
+		};
+	} forEach unlockedVests;
+	if !(_highest_armor == "") then
+	{
+		_unit addVest _highest_armor;
+	};
+	_highest_armor = nil;
+	_highest_armor_val = nil;
 };
 if !(unlockedBackpacksCargo isEqualTo []) then { _unit addBackpack (selectRandom unlockedBackpacksCargo) };
 

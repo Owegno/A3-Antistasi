@@ -5,13 +5,6 @@
 	private _originUnit = getText (configfile >> "CfgWeapons" >> _x >> "ItemInfo" >> "uniformClass");
 	private _uniformFaction = getText (configfile >> "CfgVehicles" >> _originUnit >> "faction");
 	switch (_uniformFaction) do {
-		//RHS and 3CB Rebell Uniforms are manually Added in Templates.
-		//IFA
-		case "LIB_GUER": {if (A3A_hasIFA) then {allRebelUniforms pushBack _x};};
-		//Tanoa/ApexDLC
-		case "IND_C_F": {if ((!A3A_hasIFA) and teamPlayer isEqualTo resistance) then {allRebelUniforms pushBack _x};};
-		//Contact DLC Looters
-		case "IND_L_F": {if ((!A3A_hasIFA) and teamPlayer isEqualTo resistance) then {allRebelUniforms pushBack _x};};
 		//BLUFOR used because O/I Gueriilla uniforms 'scope' = 1 ----> Added Green Via Templates.
 		case "BLU_G_F": {if ((!A3A_hasIFA) and teamPlayer isEqualTo west) then {allRebelUniforms pushBack _x};};
 	};
