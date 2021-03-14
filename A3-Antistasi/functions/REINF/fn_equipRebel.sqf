@@ -27,7 +27,7 @@ if (haveRadio) then {_unit linkItem "ItemRadio"};
 
 // Removed for the moment because I'm not sure what the intentions are for rebel uniforms
 // forceadd required for greenfor vanilla because allRebelUniforms has the blufor guerilla uniforms
-//_unit forceAddUniform (if (!activeGREF) then { selectRandom allRebelUniforms } else { uniform _unit });
+_unit forceAddUniform (selectRandom allRebelUniforms);
 
 
 // Chance of picking armored rather than random vests and headgear, rising with unlocked gear counts

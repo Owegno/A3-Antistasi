@@ -74,6 +74,12 @@ switch(true) do{
 		["Templates\NewTemplates\Aftermath\Great Khans.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
 		[2, "Using Great Khans template", _filename] call A3A_fnc_log;
     };
+	
+    case (A3A_hasTIOW): {
+		["Templates\NewTemplates\TIOW\TIOW_Reb_Imperium.sqf", independent] call A3A_fnc_compatabilityLoadFaction;
+		[2, "Using Imperium of Man template", _filename] call A3A_fnc_log;
+    };
+	
     default {
         switch(true) do {//This one (vanilla) works differently so that we don't get DLC kit on modded maps.
             case (worldName == "Enoch"): {
@@ -91,6 +97,9 @@ switch(true) do{
         };
     };
 };
+
+
+
   //Occ Templates
 switch(true) do{
 /* disabled until imtegrated
@@ -197,6 +206,12 @@ case (A3A_hasIFA): {
 		["Templates\NewTemplates\Aftermath\New California Republic.sqf", west] call A3A_fnc_compatabilityLoadFaction;
 		[2, "Using New California Republic template", _filename] call A3A_fnc_log;
     };
+	
+	case (A3A_hasTIOW): {
+		["Templates\NewTemplates\TIOW\TIOW_Gov_Chaos.sqf", west] call A3A_fnc_compatabilityLoadFaction;
+		[2, "Using Chaos template", _filename] call A3A_fnc_log;
+    };
+	
     default {
         switch(true) do {//This one (vanilla) works differently so that we don't get DLC kit on modded maps.
             case (worldName == "Enoch"): {
@@ -278,6 +293,12 @@ case (A3A_hasIFA): {
 		["Templates\NewTemplates\Aftermath\Caesar's Legion.sqf", east] call A3A_fnc_compatabilityLoadFaction;
 		[2, "Using Caesar's Legion template", _filename] call A3A_fnc_log;
     };
+	
+	case (A3A_hasTIOW): {
+		["Templates\NewTemplates\TIOW\TIOW_Inv_Tau.sqf", east] call A3A_fnc_compatabilityLoadFaction;
+		[2, "Using T'au Empire template", _filename] call A3A_fnc_log;
+    };
+	
     default {
         switch(true) do {//This one (vanilla) works differently so that we don't get DLC kit on modded maps.
             case (worldName == "Enoch"): {

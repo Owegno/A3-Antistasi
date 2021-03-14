@@ -22,8 +22,15 @@ A3A_hasADV = false;
 A3A_hasD3S = false;
 A3A_hasRDS = false;
 A3A_hasAftermath = false;
+A3A_hasTIOW = false;
 
 //Actual Detection
+
+//TIOW Detection
+if (isClass (configFile >> "CfgFactionClasses" >> "Cad667")) then {
+  A3A_hasTIOW = true;
+  [2,"TIOW Detected.",_fileName] call A3A_fnc_log;
+};
 
 //Aftermath Detection
 if (isClass (configfile >> "CfgPatches" >> "AFTERMATH") && isClass (configfile >> "CfgPatches" >> "uns_base")) then {A3A_hasAftermath = true; [2,"Aftermath Detected.",_fileName] call A3A_fnc_log;};
