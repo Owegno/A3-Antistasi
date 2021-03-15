@@ -60,7 +60,7 @@ private _initialRebelEquipment = [
 "TIOW_IG_Lascannon_Bag1_INDEP","TIOW_IG_Lascannon_Bag2_INDEP","TIOW_IG_HeavyBolter_Bag1_INDEP","TIOW_IG_HeavyBolter_Bag2_INDEP","TIOW_IG_Autocannon_Bag1_INDEP","TIOW_IG_Autocannon_Bag2_INDEP","TIOW_IG_MissileLauncher_AT_Bag1_INDEP","TIOW_IG_MissileLauncher_AT_Bag2_INDEP","TIOW_IG_MissileLauncher_AA_Bag1_INDEP","TIOW_IG_MissileLauncher_AA_Bag2_INDEP",
 "V_TacChestrig_cbr_F","V_TacChestrig_oli_F","V_TacChestrig_grn_F",
 "Binocular","ItemRadio",
-"acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol","tiow_m36_flashlight"
+"acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol","tiow_m36_flashlight","ml700_transuranic_arquebus_scope","ml700_galvanic_scope"
 ];
 _initialRebelEquipment append ["TIOW_IG_PatrolCap_836","TIOW_IG_PatrolCap2_836","TIOW_IG_PatrolCap3_836","TIOW_IG_PatrolCap4_836","TIOW_IG_Officer_Cap1_836","TIOW_IG_Officer_Cap2_836","TIOW_IG_Officer_Cap3_836"];
 

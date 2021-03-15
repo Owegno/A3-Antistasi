@@ -19,7 +19,7 @@
 
 ["vehiclesBasic", ["B_T_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["TIOW_Centaur_01_Renegade_BL_Blu"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["_RenegadeChimAuto_Black", "TIOW_Renegade_LR_Battlecannon_Black_Blu", "TIOW_Renegade_LR_Demolisher_Black_Blu", "TIOW_Renegade_LR_Punisher_Black_Blu"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["_RenegadeChimAuto_Black", "TIOW_Renegade_LR_Battlecannon_Black_Blu", "TIOW_Renegade_LR_Exterminator_Black_Blu", "TIOW_Renegade_LR_Annihilator_Black_Blu"]] call _fnc_saveToTemplate;
 ["vehiclesTrucks", ["ML700_Taurox_Unarmed"]] call _fnc_saveToTemplate;
 ["vehiclesCargoTrucks", ["B_Truck_01_flatbed_F", "B_T_Truck_01_cargo_F"]] call _fnc_saveToTemplate;
 ["vehiclesAmmoTrucks", ["B_Truck_01_ammo_F"]] call _fnc_saveToTemplate;
@@ -27,7 +27,7 @@
 ["vehiclesFuelTrucks", ["B_Truck_01_fuel_F"]] call _fnc_saveToTemplate;
 ["vehiclesMedical", ["B_Truck_01_medical_F"]] call _fnc_saveToTemplate;
 ["vehiclesAPCs", ["ML700_Taurox_Autocannon", "_RenegadeChimAuto_Black"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["TIOW_Renegade_LR_Battlecannon_Black_Blu", "TIOW_Renegade_LR_Demolisher_Black_Blu", "TIOW_Renegade_LR_Executioner_Black_Blu", "TIOW_Renegade_LR_Exterminator_Black_Blu", "TIOW_Renegade_LR_Punisher_Black_Blu", "TIOW_Renegade_LR_Vanquisher_Black_Blu"]] call _fnc_saveToTemplate;
+["vehiclesTanks", ["TIOW_Renegade_LR_Battlecannon_Black_Blu", "TIOW_Renegade_LR_Executioner_Black_Blu", "TIOW_Renegade_LR_Demolisher_Black_Blu", "TIOW_Renegade_LR_Vanquisher_Black_Blu", "TIOW_Renegade_LR_Punisher_Black_Blu"]] call _fnc_saveToTemplate;
 ["vehiclesAA", ["TIOW_RenegadeHydra_Black_Blu"]] call _fnc_saveToTemplate;
 ["vehiclesLightAPCs", ["_RenegadeChimAuto_Black"]] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", ["_RenegadeChimAuto_Black"]] call _fnc_saveToTemplate;				//this line determines IFVs
@@ -56,7 +56,7 @@
 
 ["vehiclesPolice", ["TIOW_Centaur_01_Renegade_BL_Blu"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["ML700_Static_HeavyBolter_Tripod"]] call _fnc_saveToTemplate;
+["staticMGs", ["ML700_Static_HeavyBolter_Tripod_High"]] call _fnc_saveToTemplate;
 ["staticAT", ["TIOW_IG_Lascannon_RenBlack_Blu"]] call _fnc_saveToTemplate;
 ["staticAA", ["TIOW_IG_MissileLauncher_AA_RenBlack_Blu"]] call _fnc_saveToTemplate;
 ["staticMortars", ["TIOW_IG_Mortar_RenBlack_Blu"]] call _fnc_saveToTemplate;
@@ -477,13 +477,13 @@ private _engineerTemplate = {
 	["NVGs"] call _fnc_addNVGs;
 };
 
-private _latTemplate = {
+private _atTemplate = {
 	["helmets"] call _fnc_setHelmet;
 	["vests"] call _fnc_setVest;
 	["uniforms"] call _fnc_setUniform;
 	["backpacks"] call _fnc_setBackpack;
 
-	["lightATLaunchers"] call _fnc_setPrimary;
+	["ATLaunchers"] call _fnc_setPrimary;
 	["primary", 5] call _fnc_addMagazines;
 
 	["sidearms"] call _fnc_setHandgun;
