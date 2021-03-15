@@ -1,0 +1,1 @@
+[["AM_SniperRifle","","","optic_AM_SRS",["5Rnd_308_Mag",5],[],""],[],["AM_12_7mmPistol","","","",["7Rnd_12_7mm_Mag",7],[],""],["centurion_uniform",[]],[],["BackpackNUKA",[["7Rnd_12_7mm_Mag",10,7],["10Rnd_308_AP_Mag",49,10]]],"centurion_helmet","",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

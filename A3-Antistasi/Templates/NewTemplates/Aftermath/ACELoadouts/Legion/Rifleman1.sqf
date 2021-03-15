@@ -1,0 +1,1 @@
+[["AM_CowboyRepeater","","","",["8Rnd_357",8],[],""],[],["AM_357RevShort","","","",["6Rnd_357_Cyl",6],[],""],["legion_recruit_uniform",[]],[],["BackpackNUKA",[["8Rnd_357",41,8],["6Rnd_357_Cyl",45,6],["AM_TinGrenade_throw",6,1]]],"legionbandana","",[],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

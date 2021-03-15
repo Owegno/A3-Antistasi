@@ -1,0 +1,1 @@
+[["AM_CowboyRepeater","","","",["8Rnd_357",8],[],""],[],["AM_9mmSMGOne","","","",["30Rnd_9x21_Mag",30],[],""],["legion_recruit_uniform",[]],[],["Backpack_04",[["ACE_bloodIV_250",8],["8Rnd_357",45,8],["30Rnd_9x21_Mag",13,30]]],"legionbandana","",[],["","","","","",""]]
