@@ -471,7 +471,8 @@ if (petros == leader group petros) then {
 	[petros,"mission"] call A3A_fnc_flagaction;
 };
 petros setIdentity "friendlyX";
-if (worldName == "Tanoa") then {petros setName "Maru"} else {petros setName "Petros"};
+petros setName petrosName;
+petros setUnitLoadout petrosLoadout;
 
 disableSerialization;
 //1 cutRsc ["H8erHUD","PLAIN",0,false];

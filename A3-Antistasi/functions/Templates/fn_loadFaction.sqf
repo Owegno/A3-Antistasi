@@ -53,21 +53,17 @@ private _fnc_saveUnitToTemplate = {
 	_allLoadouts setVariable [_typeName, _unitDefinition];
 };
 
-private _fnc_generateAndSaveUnitToTemplate = {
-	params ["_name", "_template", "_loadoutData", ["_traits", []]];
-	private _loadouts = [];
-	for "_i" from 1 to 5 do {
-		_loadouts pushBack ([_template, _loadoutData] call A3A_fnc_loadout_builder);
-	};
-	[_name, _loadouts, _traits] call _fnc_saveUnitToTemplate;
-};
 
 private _fnc_generateAndSaveUnitsToTemplate = {
-	params ["_prefix", "_unitTemplates", "_loadoutData"];
+	params ["_prefix", "_unitTemplates"];
 	{
-		_x params ["_name", "_template", ["_traits", []]];
+		_x params ["_name", ["_templates", []], ["_traits", []]];
+		private _class_loadouts = [];
+		{
+			_class_loadouts pushBack parseSimpleArray preprocessFile _x;
+		} forEach _templates;
 		private _finalName = format ["%1_%2", _prefix, _name];
-		[_finalName, _template, _loadoutData, _traits] call _fnc_generateAndSaveUnitToTemplate;
+		[_finalName, _class_loadouts, _traits] call _fnc_saveUnitToTemplate;
 	} forEach _unitTemplates;
 };
 

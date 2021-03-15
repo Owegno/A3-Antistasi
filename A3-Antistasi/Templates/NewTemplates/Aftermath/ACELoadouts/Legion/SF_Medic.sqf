@@ -1,0 +1,1 @@
+[[],["launch_RPG7_F","","","",["RPG7_F",1],[],""],["AM_12_7mmPistol","","","",["7Rnd_12_7mm_Mag",7],[],""],["centurion_uniform",[]],[],["BackpackNUKA",[["7Rnd_12_7mm_Mag",10,7],["RPG7_F",6,1]]],"centurion_helmet","",[],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

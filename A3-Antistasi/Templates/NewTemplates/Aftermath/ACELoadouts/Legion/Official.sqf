@@ -1,0 +1,1 @@
+[["AM_MultiPlas","","","",["30Rnd_PlasmaCartridge_Mag",30],[],""],[],["AM_PlasmaPistol","","","",["32Rnd_SmallPlasmaCartridge_Mag",32],[],""],["legate_armor_uniform",[]],[],["BackpackNUKA",[["30Rnd_PlasmaCartridge_Mag",40,30],["32Rnd_SmallPlasmaCartridge_Mag",4,32]]],"legate_helm","",[],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

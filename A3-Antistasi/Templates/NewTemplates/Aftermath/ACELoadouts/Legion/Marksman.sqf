@@ -1,0 +1,1 @@
+[["AM_CowboyRepeater","","","optic_AM_CRLR",["8Rnd_357",8],[],""],[],["AM_357RevShort","","","",["6Rnd_357_Cyl",6],[],""],["legionexplorer_uniform",[]],[],["BackpackNUKA",[["6Rnd_357_Cyl",20,6],["8Rnd_38",140,8]]],"legionhood","",[],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

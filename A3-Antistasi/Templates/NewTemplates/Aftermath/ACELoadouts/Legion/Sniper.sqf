@@ -1,0 +1,1 @@
+[["AM_SniperRifle","","","optic_AM_SRS",["5Rnd_308_Mag",5],[],""],[],["AM_357RevShort","","","",["6Rnd_357_Cyl",6],[],""],["legionprime_uniform",[]],[],["BackpackNUKA",[["6Rnd_357_Cyl",20,6],["10Rnd_308_AP_Mag",52,10]]],"legionfeatherhead01","",["Rangefinder","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

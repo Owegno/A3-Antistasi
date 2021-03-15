@@ -6,4 +6,9 @@ if (!isServer) exitWith {};
 
 [3, format ["Registering unit %1 with %2 loadouts", _unitTypeName, count _unitLoadouts], _fileName] call A3A_fnc_log;
 
+diag_log _unitLoadouts;
+{
+	diag_log _x;
+} forEach _unitLoadouts;
+
 customUnitTypes setVariable [_unitTypeName, _unitLoadouts, true];

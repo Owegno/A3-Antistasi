@@ -425,6 +425,8 @@ if (_side isEqualTo independent) then {
 	SDKFlag = _faction getVariable "flag";
 	SDKFlagTexture = _faction getVariable "flagTexture";
 	typePetros = "loadouts_rebel_militia_Petros";
+	petrosName = _faction getVariable "petrosName";
+	petrosLoadout = _faction getVariable "petrosLoadout";
 
 	staticCrewTeamPlayer = "loadouts_rebel_militia_staticCrew";
 	SDKUnarmed = "loadouts_rebel_militia_Unarmed";

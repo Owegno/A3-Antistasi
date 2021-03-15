@@ -627,21 +627,21 @@ private _traitorTemplate = {
 /////////////////////////////
 private _prefix = "SF";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate]
+	["SquadLeader", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_SquadLeader.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Rifleman1.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Rifleman2.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Rifleman3.sqf"]],
+	["Medic", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Medic.sqf"]],
+	["Engineer", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Medic.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Grenadier.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Grenadier.sqf"]],
+	["LAT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Machinegunner.sqf"]],
+	["AT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Medic.sqf"]],
+	["AA", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Medic.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Machinegunner.sqf"]],
+	["Marksman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Marksman.sqf"]],
+	["Sniper", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SF_Sniper.sqf"]]
 ];
 
-[_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 /*{
 	params ["_name", "_loadoutTemplate"];
@@ -656,63 +656,63 @@ private _unitTypes = [
 ///////////////////////
 private _prefix = "military";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate]
+	["SquadLeader", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SquadLeader.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman1.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman2.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman3.sqf"]],
+	["Medic", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["Engineer", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Grenadier.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Grenadier.sqf"]],
+	["LAT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Machinegunner.sqf"]],
+	["AT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["AA", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Machinegunner.sqf"]],
+	["Marksman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Marksman.sqf"]],
+	["Sniper", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Sniper.sqf"]]
 ];
 
-[_prefix, _unitTypes, _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 ////////////////////////
 //    Police Units    //
 ////////////////////////
 private _prefix = "police";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Standard", _policeTemplate]
+	["SquadLeader", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman1.sqf","Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman2.sqf","Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman3.sqf"]],
+	["Standard", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman1.sqf","Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman2.sqf","Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman3.sqf"]]
 ];
 
-[_prefix, _unitTypes, _policeLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 ////////////////////////
 //    Militia Units    //
 ////////////////////////
 private _prefix = "militia";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate]
+	["SquadLeader", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\SquadLeader.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman1.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman2.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman3.sqf"]],
+	["Medic", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["Engineer", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Grenadier.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Grenadier.sqf"]],
+	["LAT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Machinegunner.sqf"]],
+	["AT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["AA", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Medic.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Machinegunner.sqf"]],
+	["Marksman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Marksman.sqf"]],
+	["Sniper", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Sniper.sqf"]]
 ];
 
-[_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 //////////////////////
 //    Misc Units    //
 //////////////////////
 
 //The following lines are determining the loadout of vehicle crew
-["other", [["Crew", _crewTemplate]], _crewLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Crew", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman1.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout of the pilots
-["other", [["Pilot", _crewTemplate]], _pilotLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Pilot", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman1.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout for the unit used in the "kill the official" mission
-["other", [["Official", _policeTemplate]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Official", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Official.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout for the AI used in the "kill the traitor" mission
-["other", [["Traitor", _traitorTemplate]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Traitor", ["Templates\NewTemplates\Aftermath\ACELoadouts\Legion\Rifleman1.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;

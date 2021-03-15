@@ -1,0 +1,1 @@
+[["AM_HuntingShotgun","","","",["6Rnd_12ga_pel_Mag",6],[],""],[],["AM_357RevShort","","","",["6Rnd_357_Cyl",6],[],""],["legionprime_uniform",[]],[],["BackpackNUKA",[["6Rnd_357_Cyl",45,6],["AM_TinGrenade_throw",6,1],["6Rnd_12ga_pel_Mag",5,6]]],"legionhelmetbase","",[],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

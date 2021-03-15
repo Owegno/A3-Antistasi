@@ -1,0 +1,1 @@
+[[],[],[],["petrochico_01_01_uniform",[]],[],[],"","",["Binocular","","","",[],[],""],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

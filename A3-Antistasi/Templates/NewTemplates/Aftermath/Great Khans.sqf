@@ -8,6 +8,10 @@
 ["flagTexture", "Templates\NewTemplates\Aftermath\khans_flag_antistasi.paa"] call _fnc_saveToTemplate; 				//this line determines the flag texture -- Example: ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] - ENTER ONLY ONE OPTION
 ["flagMarkerType", ""] call _fnc_saveToTemplate; 			//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
 
+["petrosName", "Papa Khan"] call _fnc_saveToTemplate; 						//this line determines the name of Petros -- Example: ["petrosName", "Petros"] - ENTER ONLY ONE OPTION
+["petrosLoadout", parseSimpleArray preprocessFile "Templates\NewTemplates\Aftermath\PapaKhan.sqf"] call _fnc_saveToTemplate; 	//The sqf file should contain an ACE Loadout.
+
+
 ["vehicleBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightUnarmed", ["uns_willys_2"]] call _fnc_saveToTemplate; 		//this line determines light and unarmed vehicles. -- Example: ["vehiclesLightUnarmed", ["B_MRAP_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightArmed", ["uns_willysmg50"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F","B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
@@ -49,7 +53,7 @@
 //  Rebel Starting Gear  //
 ///////////////////////////
 //Greenfor uniforms
-allRebelUniforms append ["khan_great_01_uniform"];
+allRebelUniforms = ["khan_great_01_uniform"];
 
 private _initialRebelEquipment = [
 "AM_CaravanShotgun", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Slug", 
@@ -544,21 +548,21 @@ private _unarmedTemplate = {
 
 private _prefix = "militia";
 private _unitTypes = [
-	["Petros", _squadLeaderTemplate],
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["staticCrew", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate],
-	["Unarmed", _unarmedTemplate]
+	["Petros", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Petros.sqf"]],
+	["SquadLeader", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["staticCrew", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["Medic", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["Engineer", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["LAT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["AT", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["AA", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["Marksman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["Sniper", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
+	["Unarmed", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]]
 ];
 
-[_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;

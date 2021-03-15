@@ -1,0 +1,1 @@
+[["AM_RiotSG","","","",["12Rnd_12ga_pel_Mag",12],[],""],[],["AM_12_7mmPistol","","","",["7Rnd_12_7mm_Mag",7],[],""],["centurion_uniform",[]],[],["BackpackNUKA",[["7Rnd_12_7mm_Mag",10,7],["12Rnd_12ga_pel_Mag",6,12]]],"centurion_helmet","",[],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]
