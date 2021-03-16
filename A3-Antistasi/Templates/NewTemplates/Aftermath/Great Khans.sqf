@@ -10,6 +10,9 @@
 
 ["petrosName", "Papa Khan"] call _fnc_saveToTemplate; 						//this line determines the name of Petros -- Example: ["petrosName", "Petros"] - ENTER ONLY ONE OPTION
 
+["petrosLoadout", parseSimpleArray preprocessFile "Templates\NewTemplates\Aftermath\PapaKhan.sqf"] call _fnc_saveToTemplate; 						//this line determines the name of Petros -- Example: ["petrosName", "Petros"] - ENTER ONLY ONE OPTION
+
+
 ["vehicleBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightUnarmed", ["uns_willys_2"]] call _fnc_saveToTemplate; 		//this line determines light and unarmed vehicles. -- Example: ["vehiclesLightUnarmed", ["B_MRAP_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightArmed", ["uns_willysmg50"]] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F","B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets

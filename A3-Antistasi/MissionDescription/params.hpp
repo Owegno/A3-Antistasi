@@ -5,7 +5,7 @@ class Params
           title = "Load last Persistent Save";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class gameMode
      {

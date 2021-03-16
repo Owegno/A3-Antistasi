@@ -10,6 +10,8 @@ petros allowDamage false;
 [petros,unlockedRifles] call A3A_fnc_randomRifle;
 petros selectWeapon (primaryWeapon petros);
 petros forceAddUniform (selectRandom allRebelUniforms);
+petros setUnitLoadout petrosLoadout;
+petros setName petrosName;
 [petros,true] call A3A_fnc_punishment_FF_addEH;
 petros addEventHandler
 [
