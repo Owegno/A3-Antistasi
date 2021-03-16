@@ -543,21 +543,21 @@ private _unarmedTemplate = {
 
 private _prefix = "militia";
 private _unitTypes = [
-	["Petros", _squadLeaderTemplate],
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["staticCrew", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate],
-	["Unarmed", _unarmedTemplate]
+	["Petros", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\Petros.sqf"]],
+	["SquadLeader", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGSL.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGRifleman.sqf"]],
+	["staticCrew", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGRifleman.sqf"]],
+	["Medic", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGMedic.sqf"]],
+	["Engineer", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGEngineer.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGEXO.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGGrenadier.sqf"]],
+	["LAT", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGAT.sqf"]],
+	["AT", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGPlasma.sqf"]],
+	["AA", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGMelta.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGMG.sqf"]],
+	["Marksman", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGSniper.sqf"]],
+	["Sniper", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGSniper.sqf"]],
+	["Unarmed", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGUnarmed.sqf"]]
 ];
 
 [_prefix, _unitTypes, _loadoutData] call _fnc_generateAndSaveUnitsToTemplate;

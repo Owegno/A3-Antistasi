@@ -700,21 +700,21 @@ private _traitorTemplate = {
 /////////////////////////////
 private _prefix = "SF";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate]
+	["SquadLeader", ["Templates\NewTemplates\TIOW\ACEloadouts\Chaos\ChaosKasrkinSL.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\TIOW\ACEloadouts\Chaos\ChaosKasrkinRFL.sqf"]],
+	["Medic", ["Templates\NewTemplates\TIOW\ACEloadouts\Chaos\ChaosKasrkinMed.sqf"]],
+	["Engineer", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinENG.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinEXO.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinGRN.sqf"]],
+	["LAT", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinAT.sqf"]],
+	["AT", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinPLA.sqf"]],
+	["AA", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinMEL.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinFLM.sqf"]],
+	["Marksman", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinDMR.sqf"]],
+	["Sniper", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosKasrkinSNP.sqf"]]
 ];
 
-[_prefix, _unitTypes, _sfLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 /*{
 	params ["_name", "_loadoutTemplate"];
@@ -729,63 +729,63 @@ private _unitTypes = [
 ///////////////////////
 private _prefix = "military";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate]
+	["SquadLeader", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularSL.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL4.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL5.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL6.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL7.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularRFL8.sqf"]],
+	["Medic", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMed1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMed2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMed3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMed4.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMed5.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMed6.sqf"]],
+	["Engineer", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularENG1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularENG2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularENG3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularENG4.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularENG5.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularENG6.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO4.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO5.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO6.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO7.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularEXO8.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularGRN1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularGRN2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularGRN3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularGRN4.sqf"]],
+	["LAT", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT4.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT5.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT6.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT7.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularAT8.sqf"]],
+	["AT", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularPLA.sqf"]],
+	["AA", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMEL.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMG1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMG2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMG3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularMG4.sqf"]],
+	["Marksman", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularDMR2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularDMR1.sqf"]],
+	["Sniper", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularSNP1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularSNP2.sqf"]]
 ];
 
-[_prefix, _unitTypes, _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 ////////////////////////
 //    Police Units    //
 ////////////////////////
 private _prefix = "police";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Standard", _policeTemplate]
+	["SquadLeader", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosCultistSL.sqf"]],
+	["Standard", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosCultist.sqf"]]
 ];
 
-[_prefix, _unitTypes, _policeLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 ////////////////////////
 //    Militia Units    //
 ////////////////////////
 private _prefix = "militia";
 private _unitTypes = [
-	["SquadLeader", _squadLeaderTemplate],
-	["Rifleman", _riflemanTemplate],
-	["Medic", _medicTemplate],
-	["Engineer", _engineerTemplate],
-	["ExplosivesExpert", _explosivesExpertTemplate],
-	["Grenadier", _grenadierTemplate],
-	["LAT", _latTemplate],
-	["AT", _atTemplate],
-	["AA", _aaTemplate],
-	["MachineGunner", _machineGunnerTemplate],
-	["Marksman", _marksmanTemplate],
-	["Sniper", _sniperTemplate]
+	["SquadLeader", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaSL.sqf"]],
+	["Rifleman", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaRFL1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaRFL2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaRFL3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaRFL4.sqf"]],
+	["Medic", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaMed1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaMed2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaMed3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaMed4.sqf"]],
+	["Engineer", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaENG1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaENG2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaENG3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaENG4.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaEXO1.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaEXO2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaEXO3.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaEXO4.sqf"]],
+	["Grenadier", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaGRN2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaGRN1.sqf"]],
+	["LAT", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaAT2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaAT1.sqf"]],
+	["AT", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaPLA.sqf"]],
+	["AA", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaMEL.sqf"]],
+	["MachineGunner", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaMG.sqf"]],
+	["Marksman", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaDMR2.sqf", "Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaDMR1.sqf"]],
+	["Sniper", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosMilitiaSNP.sqf"]]
 ];
 
-[_prefix, _unitTypes, _militiaLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+[_prefix, _unitTypes] call _fnc_generateAndSaveUnitsToTemplate;
 
 //////////////////////
 //    Misc Units    //
 //////////////////////
 
 //The following lines are determining the loadout of vehicle crew
-["other", [["Crew", _crewTemplate]], _crewLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Crew", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularCRW1.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout of the pilots
-["other", [["Pilot", _crewTemplate]], _pilotLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Pilot", ["Templates\NewTemplates\TIOW\ACELoadouts\Chaos\ChaosRegularCRW1.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout for the unit used in the "kill the official" mission
-["other", [["Official", _policeTemplate]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Official", ["Templates\NewTemplates\TIOW\ACEloadouts\Chaos\ChaosKasrkinSL.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout for the AI used in the "kill the traitor" mission
-["other", [["Traitor", _traitorTemplate]], _militaryLoadoutData] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Traitor", ["Templates\NewTemplates\TIOW\ACELoadouts\Imperium\IGSL.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
