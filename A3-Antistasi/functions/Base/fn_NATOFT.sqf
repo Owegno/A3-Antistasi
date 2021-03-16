@@ -5,7 +5,6 @@ _enemyFaction = if (_sideX == Occupants) then {Invaders} else {Occupants};
 if (((side _enemyX == _enemyFaction) or (side _enemyX == teamPlayer)) and (_enemyX distance player < 500) and (not(captive _enemyX))) exitWith {_checkX = true};
 } forEach allUnits;
 
-if (_checkX) exitWith {["Fast Travel", "You cannot Fast Travel while enemies are nearby"] call A3A_fnc_customHint;};
 
 if (vehicle player != player) then {if (!(canMove vehicle player)) then {_checkX = true}};
 if (_checkX) exitWith {["Fast Travel", "You cannot Fast Travel if your vehicles don't have a driver or your vehicles immobile"] call A3A_fnc_customHint;};

@@ -25,8 +25,6 @@ _distanceX = 500;
 
 {if ([_x,_distanceX] call A3A_fnc_enemyNearCheck) exitWith {_checkX = true}} forEach units _groupX;
 
-if (_checkX) exitWith {["Fast Travel", "You cannot Fast Travel with enemies near the group"] call A3A_fnc_customHint;};
-
 {if ((vehicle _x!= _x) and ((isNull (driver vehicle _x)) or (!canMove vehicle _x) or (vehicle _x isKindOf "Boat"))) then
 	{
 	if (not(vehicle _x isKindOf "StaticWeapon")) then {_checkX = true};
@@ -54,8 +52,6 @@ if (count _positionTel > 0) then
 	if ((sidesX getVariable [_base,sideUnknown] == Occupants) or (sidesX getVariable [_base,sideUnknown] == Invaders)) exitWith {["Fast Travel", "You cannot Fast Travel to an enemy controlled zone"] call A3A_fnc_customHint; openMap [false,false]};
 
 	//if (_base in outpostsFIA) exitWith {hint "You cannot Fast Travel to roadblocks and watchposts"; openMap [false,false]};
-
-	if ([getMarkerPos _base,500] call A3A_fnc_enemyNearCheck) exitWith {["Fast Travel", "You cannot Fast Travel to an area under attack or with enemies in the surrounding"] call A3A_fnc_customHint; openMap [false,false]};
 
 	if (_positionTel distance getMarkerPos _base < 50) then
 		{

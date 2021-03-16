@@ -471,8 +471,6 @@ if (petros == leader group petros) then {
 	[petros,"mission"] call A3A_fnc_flagaction;
 };
 petros setIdentity "friendlyX";
-petros setName petrosName;
-petros setUnitLoadout petrosLoadout;
 
 disableSerialization;
 //1 cutRsc ["H8erHUD","PLAIN",0,false];

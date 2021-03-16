@@ -5,7 +5,7 @@ class Params
           title = "Load last Persistent Save";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 1;
+          default = 0;
      };
      class gameMode
      {
@@ -26,14 +26,14 @@ class Params
           title = "Time between autosaves (in minutes)";
           values[] = {600,1200,1800,3600,5400};
           texts[] = {"10","20","30","60","90"};
-          default = 3600;
+          default = 600;
      };
      class membership
      {
           title = "Enable Server Membership";
           texts[] = {"Yes","No"};
           values[] = {1,0};
-          default = 1;
+          default = 0;
      };
      class switchComm
      {
@@ -47,13 +47,13 @@ class Params
           title = "Enable Teamkill Punish";
           values[] = {1,0};
           texts[] = {"Yes","No"};
-          default = 1;
+          default = 0;
      };
      class mRadius
      {
           title = "Max distance from HQ for tasks";
           values[] = {2000,4000,6000,8000,10000,12000};
-          default = 4000;
+          default = 2000;
      };
      class allowPvP
      {
@@ -80,7 +80,7 @@ class Params
      {
           title = "Number of the same item required to unlock";
           values[] = {15,25,40};
-          default = 25;
+          default = 15;
      };
      class memberOnlyMagLimit
      {
@@ -100,14 +100,14 @@ class Params
           title = "Percentage of Reserved Slots for Members";
           values[] = {0,20,40,60,80,100};
           texts[] = {"None","20%","40%","60%","80%","All"};
-          default = 20;
+          default = 0;
      };
      class memberDistance
      {
           title = "Max distance non members can be from the closest member or HQ (they will be teleported to HQ after some timeout)";
           values[] = {4000,5000,6000,7000,8000,16000};
           texts[] = {"4 Kmts","5 Kmts","6 Kmts","7 Kmts","8 Kmts","Unlimited"};
-          default = 5000;
+          default = 16000;
      };
 	 class allowMembersFactionGarageAccess
      {
@@ -121,21 +121,21 @@ class Params
           title = "Max personal garage slots";
           texts[] = {"Unlimited", "2", "5", "10"};
           values[] = {0,2,5,10};
-          default = 2;
+          default = 0;
      };
      class allowFT
      {
           title = "Fast Travel Targets Allowed";
           values[] = {0,1};
           texts[] = {"Any friendly position","Only Airports & HQ"};
-          default = 1;
+          default = 0;
      };
      class napalmEnabled
      {
           title = "Enable Napalm Bombing for AI";
           values[] = {0,1};
           texts[] = {"No","Yes"};
-          default = 0;
+          default = 1;
      };
      class teamSwitchDelay
      {
@@ -149,21 +149,21 @@ class Params
           title = "Do Unlocked Weapons Automatically Unlock Their Standard Magazine?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class allowGuidedLaunchers
      {
           title = "Should Guided Launchers become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class allowUnlockedExplosives
      {
           title = "Should Explosives become unlocked?";
           values[] = {1,0};
           texts[] =  {"Yes","No"};
-          default = 0;
+          default = 1;
      };
      class startWithLongRangeRadio
      {
@@ -198,7 +198,7 @@ class Params
           title = "Loot to crate: transfers unlocked items";
           values[] = {0, 1};
           texts[] = {"Disabled", "Enabled"};
-          default = 0;
+          default = 1;
      };
      class Spacer11
      {
@@ -338,7 +338,7 @@ class Params
 		title = "Decrease loot quantity as player count increases? (Yes is recommended for balance reasons)";
 		values[] = {0, 1};
 		texts[] = {"False", "True"};
-		default = 1;
+		default = 0;
 	 };
      class crateWepTypeMax
      {

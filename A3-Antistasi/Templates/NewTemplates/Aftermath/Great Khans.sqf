@@ -9,8 +9,6 @@
 ["flagMarkerType", ""] call _fnc_saveToTemplate; 			//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
 
 ["petrosName", "Papa Khan"] call _fnc_saveToTemplate; 						//this line determines the name of Petros -- Example: ["petrosName", "Petros"] - ENTER ONLY ONE OPTION
-["petrosLoadout", parseSimpleArray preprocessFile "Templates\NewTemplates\Aftermath\PapaKhan.sqf"] call _fnc_saveToTemplate; 	//The sqf file should contain an ACE Loadout.
-
 
 ["vehicleBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightUnarmed", ["uns_willys_2"]] call _fnc_saveToTemplate; 		//this line determines light and unarmed vehicles. -- Example: ["vehiclesLightUnarmed", ["B_MRAP_01_F"]] -- Array, can contain multiple assets
@@ -548,7 +546,7 @@ private _unarmedTemplate = {
 
 private _prefix = "militia";
 private _unitTypes = [
-	["Petros", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Petros.sqf"]],
+	["Petros", ["Templates\NewTemplates\Aftermath\PapaKhan.sqf"]],
 	["SquadLeader", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
 	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],
 	["staticCrew", ["Templates\NewTemplates\Aftermath\ACELoadouts\Khans\Unarmed.sqf"]],

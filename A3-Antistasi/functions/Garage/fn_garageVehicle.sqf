@@ -36,8 +36,6 @@ if ((typeOf _veh) in [NATOSurrenderCrate, CSATSurrenderCrate]) exitWith {
 if !(_veh isKindOf "AllVehicles") exitWith {["Garage", "The vehicle you are looking can't be stored in our Garage"] call A3A_fnc_customHint;};
 
 _units = (player nearEntities ["Man",300]) select {([_x] call A3A_fnc_CanFight) && (side _x isEqualTo Occupants || side _x isEqualTo Invaders)};
-if (_units findIf {_unit = _x; _players = allPlayers select {(side _x isEqualTo teamPlayer) && (player distance _x < 300)}; _players findIf {_x in (_unit targets [true, 300])} != -1} != -1) exitWith {["Garage", "You can't garage vehicles while enemies are engaging you"] call A3A_fnc_customHint};
-if (_units findIf{player distance _x < 100} != -1) exitWith {["Garage", "You can't garage vehicles while enemies are near you"] call A3A_fnc_customHint};
 
 if (player distance _veh > 25) exitWith {["Garage", "You can't garage vehicles that are more than 25m away from you"] call A3A_fnc_customHint};
 

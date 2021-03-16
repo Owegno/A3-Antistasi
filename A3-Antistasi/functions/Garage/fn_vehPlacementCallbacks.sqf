@@ -46,10 +46,6 @@ switch (_callbackTarget) do {
 				{
 					[false, "You need to be close to one of your garrisons to be able to retrieve a vehicle from your garage"];
 				};
-				if ([player,300] call A3A_fnc_enemyNearCheck) exitWith
-				{
-					[false, "You cannot manage the Garage with enemies nearby"];
-				};
 				[true];
 			};
 		
@@ -119,10 +115,6 @@ switch (_callbackTarget) do {
 				if (!(player inArea vehiclePurchase_nearestMarker)) exitWith 
 				{
 					[false, "You need to be close to one of your garrisons to be able to retrieve a vehicle from your garage"];
-				};
-				if ([player,300] call A3A_fnc_enemyNearCheck) exitWith
-				{
-					[false, "You cannotbuy vehicles with enemies nearby"];
 				};
 				[true];
 			};
