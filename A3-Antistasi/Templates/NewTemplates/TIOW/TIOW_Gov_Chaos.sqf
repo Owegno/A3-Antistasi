@@ -41,8 +41,8 @@
 ["vehiclesPlanesAA", ["TIOW_Thunderbolt_Base"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", ["Valkyrie_Possessed_BL_B"]] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["Valkyrie_Possessed_BL_B"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["Valkyrie_Possessed_BL_B"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["ML700_Valkyrie_Multilas"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["ML700_Valkyrie_Multilas"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["ML700_Valkyrie_Multilas"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [["B_MBT_01_arty_F",["32Rnd_155mm_Mo_shells"],["B_MBT_01_mlrs_F",["12Rnd_230mm_rockets"]]]]] call _fnc_saveToTemplate;
