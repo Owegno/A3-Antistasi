@@ -1,0 +1,1 @@
+[["AM_FNFal","","","",["20Rnd_762x51_Mag",20],[],""],[],["AM_12_7mmPistol","","","",["7Rnd_12_7mm_Mag",7],[],""],["centurion_uniform",[]],[],["BackpackNUKA",[["7Rnd_12_7mm_Mag",10,7],["20Rnd_762x51_Mag",7,20],["AM_Molotov_throw",2,1],["AM_TinGrenade_throw",5,1]]],"centurion_helmet","",[],["ItemMap","ItemGPS","ItemRadio","ItemCompass","ItemWatch",""]]

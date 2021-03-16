@@ -12,8 +12,6 @@ private _enemyNear = false;
 	if (((side _x == Invaders) or (side _x == Occupants)) and (_x distance petros < 500) and ([_x] call A3A_fnc_canFight) and !(isPlayer _x)) exitWith {_enemyNear = true};
 } forEach allUnits;
 
-if (_enemyNear) exitWith {["Recruit Squad", "You cannot recruit squads with enemies near your HQ"] call A3A_fnc_customHint;};
-
 _typeGroup = _this select 0;
 _exit = false;
 

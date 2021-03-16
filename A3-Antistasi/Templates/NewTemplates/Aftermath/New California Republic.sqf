@@ -630,7 +630,7 @@ private _unitTypes = [
 	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Rifleman1.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Rifleman2.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Rifleman3.sqf"]],
 	["Medic", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Medic.sqf"]],
 	["Engineer", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Engineer.sqf"]],
-	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Grenadier.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_ExplosiveExpert.sqf"]],
 	["Grenadier", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Grenadier.sqf"]],
 	["LAT", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Machinegunner.sqf"]],
 	["AT", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\SF_Engineer.sqf"]],
@@ -659,7 +659,7 @@ private _unitTypes = [
 	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman1.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman2.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman3.sqf"]],
 	["Medic", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Medic.sqf"]],
 	["Engineer", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Engineer.sqf"]],
-	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Grenadier.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\ExplosiveExpert.sqf"]],
 	["Grenadier", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Grenadier.sqf"]],
 	["LAT", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Machinegunner.sqf"]],
 	["AT", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Engineer.sqf"]],
@@ -691,7 +691,7 @@ private _unitTypes = [
 	["Rifleman", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman1.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman2.sqf", "Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman3.sqf"]],
 	["Medic", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Medic.sqf"]],
 	["Engineer", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Engineer.sqf"]],
-	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Grenadier.sqf"]],
+	["ExplosivesExpert", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\ExplosiveExpert.sqf"]],
 	["Grenadier", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Grenadier.sqf"]],
 	["LAT", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Machinegunner.sqf"]],
 	["AT", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Engineer.sqf"]],
@@ -708,9 +708,9 @@ private _unitTypes = [
 //////////////////////
 
 //The following lines are determining the loadout of vehicle crew
-["other", [["Crew", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Crew.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Crew", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman1.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout of the pilots
-["other", [["Pilot", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Crew.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
+["other", [["Pilot", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Rifleman1.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout for the unit used in the "kill the official" mission
 ["other", [["Official", ["Templates\NewTemplates\Aftermath\ACELoadouts\NCR\Official.sqf"]]]] call _fnc_generateAndSaveUnitsToTemplate;
 //The following lines are determining the loadout for the AI used in the "kill the traitor" mission
