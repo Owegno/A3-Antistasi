@@ -8,6 +8,10 @@
 ["flagTexture", "\A3\Data_F_exp\Flags\Flag_Synd_CO.paa"] call _fnc_saveToTemplate; 				//this line determines the flag texture -- Example: ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] - ENTER ONLY ONE OPTION
 ["flagMarkerType", ""] call _fnc_saveToTemplate; 			//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
 
+["petrosName", "Captain"] call _fnc_saveToTemplate; 						//this line determines the name of Petros -- Example: ["petrosName", "Petros"] - ENTER ONLY ONE OPTION
+
+["petrosLoadout", parseSimpleArray preprocessFile "Templates\NewTemplates\TIOW\ACELoadouts\Imperium\Petros.sqf"] call _fnc_saveToTemplate; 						//this line determines the name of Petros -- Example: ["petrosName", "Petros"] - ENTER ONLY ONE OPTION
+
 ["vehicleBasic", "Sentinel_CS_1490th_1"] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightUnarmed", "Sentinel_HB_1490th_1"] call _fnc_saveToTemplate; 		//this line determines light and unarmed vehicles. -- Example: ["vehiclesLightUnarmed", ["B_MRAP_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightArmed", "TIOW_CadianChimAuto_776"] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F","B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
